@@ -69,7 +69,9 @@ reset.addEventListener("click", function (event) {
 });
 
 calculate.addEventListener("click", function (event) {
-    calculate_it();
+    output.innerHtml =  ((isNaN(Attempts.value) || !Attempts.value) || (isNaN(Threes_Made.value) || !Threes_Made.value) (isNaN(Twos_Made.value) || !Twos_Made.value))
+                        ? alert("Please enter a number in Three Pointers Made, Two Pointers Made, and Total Shots Attempted")
+                        : calculate_it();
     event.preventDefault();
 });
 
