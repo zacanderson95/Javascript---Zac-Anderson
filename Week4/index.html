@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <title>EFG% Calculator</title>
+        
+        <script src="js/script.js" defer></script>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <header class="pb-3 mb-3 mt-3 pt-3 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <span class="fs-4">Effective Field Goal Percentage Calculator</span>
+            </a>
+
+
+        </header>
+
+        <div class="row">
+            <div class="col-4 bg-primary bg-opacity-25 shadow-sm p-3 mb-5 mt-5 rounded">           
+                <form id="formname">
+                    <div class="mb-3">
+                        <label for="Person" class="form-label">Person</label>
+                        <input type="text" class="form-control" id="Person" placeholder="Enter name">
+                        <div id="disclaimer" class="form-text opacity-50">We'll never share your shooting splits with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Threes_Made" class="form-label" >Three Pointers Made</label>
+                        <input type="number" class="form-control" id="Threes_Made" placeholder="Enter Three Pointers Made" pattern="[0-9]">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Twos_Made" class="form-label">Two Pointers Made</label>
+                        <input type="number" class="form-control" id="Twos_Made" placeholder="Enter Two Pointers Made" pattern="[0-9]">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Attempts" class="form-label">Total Shots Attempted</label>
+                        <input type="number" class="form-control" id="Attempts" placeholder="Enter Total Shots Attempted" pattern="[0-9]">
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input bg-info" type="checkbox" role="switch" id="fg" checked>
+                        <label class="form-check-label mb-2" for="fg">Add Field Goal Percentage to Results</label>
+                    </div>
+                    <button type="button" class="btn btn-info opacity-80 float-end mt-3 m-2"id="calculate">Calculate</button>
+                    <button type="reset" class="btn btn-warning opacity-75 float-end mt-3 m-2"id="reset">Reset</button>
+                </form>
+            </div>
+            <div class="col-8 p-5" id="output">
+            </div>
+          </div>
+        
+        <footer class="pt-3 mt-4 text-muted border-top">
+                &copy; 2022
+        </footer>
+
+    </div>
+   
+     <script src="js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
+
