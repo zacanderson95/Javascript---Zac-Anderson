@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="../js/bootstrap.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <link href="../css/bootstrap.rtl.css" rel="stylesheet">
+  </head>
+  <body>
+        <div id="content" class="container">
+        <h1>Web Forms</h1>
+            <form name="customForm" id="customFormID" action="https://littlelightmedia.com/test.php" method="post">
+                <div class="mb-3">
+                    <label for="inputEmail" class="formLabel"><b>Username</b></label>
+                    <input type="email" placeholder="youremail@address.com" name="inputEmail" required>
+
+                    <label for="inputPassword"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="inputPassword" required>
+
+                    <label for="inputVerifyPassword" class="formLabel"><b>Verify Password</b></label>
+                    <input type="password" placeholder="Verify Password" name="password" id="verifyPassword" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                 </div>
+                 <div class="mb-3">
+                    <label for="ccn">Credit Card Number</label>
+                    <input type="text" name="ccn" id="cardNumber" pattern="/^([0-9]{4}( |\-)){3}[0-4]{4}$/" required>
+                    <label for="ccv">CCV</label>
+                    <input type="text" name="ccv" id="ccv" maxlength="3" required>
+                 </div>
+                 <div class="mb-3">   
+                    <h1>Shipping Address</h1>
+                    <label for="address" class="formLabel">Street Address</label>
+                    <input type="text" name="address" id="address" required>
+                    <label for="zipCode" class="formLabel">Zip Code</label>
+                    <input type="number" name="zipCode" id="zipCode" pattern = "[0-9]{5}" required>
+                    <label for="state" class="formLabel">State</label></p>     
+                    <input type="text" id="shipState" list="shipStateList" name="shipList" required>
+                        <datalist id="shipStateList">
+                                <option value="AL"></option>
+                                <option value="AK"></option>
+                                <option value="AZ"></option>
+                                <option value="AR"></option>
+                                <option value="CA"></option>
+                                <option value="CO"></option>
+                                <option value="CT"></option>
+                                <option value="DE"></option>
+                                <option value="DC"></option>
+                                <option value="FL"></option>
+                                <option value="GA"></option>
+                                <option value="HI"></option>
+                                <option value="ID"></option>
+                                <option value="IL"></option>
+                                <option value="IN"></option>
+                                <option value="IA"></option>
+                                <option value="KS"></option>
+                                <option value="KY"></option>
+                                <option value="LA"></option>
+                                <option value="ME"></option>
+                                <option value="MD"></option>
+                                <option value="MA"></option>
+                                <option value="MI"></option>
+                                <option value="MN"></option>
+                                <option value="MS"></option>
+                                <option value="MO"></option>
+                                <option value="MT"></option>
+                                <option value="NE"></option>
+                                <option value="NV"></option>
+                                <option value="NH"></option>
+                                <option value="NJ"></option>
+                                <option value="NM"></option>
+                                <option value="NY"></option>
+                                <option value="NC"></option>
+                                <option value="ND"></option>
+                                <option value="OH"></option>
+                                <option value="OK"></option>
+                                <option value="OR"></option>
+                                <option value="PA"></option>
+                                <option value="RI"></option>
+                                <option value="SC"></option>
+                                <option value="SD"></option>
+                                <option value="TN"></option>
+                                <option value="TX"></option>
+                                <option value="UT"></option>
+                                <option value="VT"></option>
+                                <option value="VA"></option>
+                                <option value="WA"></option>
+                                <option value="WV"></option>
+                                <option value="WI"></option>
+                                <option value="WY"></option>
+                        </datalist>
+                    <label for="checkbox" class="formLabel">Billing address is same as shipping address</label>      
+                    <input type="checkbox" id="sameCheck" name="same"/>
+                    <h1>Billing Address</h1>
+                    <label for="address" class="formLabel">Street Address</label>
+                    <input type="text" name="address" id="addressBilling" required>
+                    <label for="zipCode" class="formLabel">Zip Code</label>
+                    <input type="number" name="zipCode" id="zipCodeBilling" pattern = "[0-9]{5}" required>
+                    <label for="state" class="formLabel">State</label></p>     
+                    <input type="text" id="billState" list="billStateList" name="billList" required>
+                        <datalist id="billStateList">
+                                <option value="AL"></option>
+                                <option value="AK"></option>
+                                <option value="AZ"></option>
+                                <option value="AR"></option>
+                                <option value="CA"></option>
+                                <option value="CO"></option>
+                                <option value="CT"></option>
+                                <option value="DE"></option>
+                                <option value="DC"></option>
+                                <option value="FL"></option>
+                                <option value="GA"></option>
+                                <option value="HI"></option>
+                                <option value="ID"></option>
+                                <option value="IL"></option>
+                                <option value="IN"></option>
+                                <option value="IA"></option>
+                                <option value="KS"></option>
+                                <option value="KY"></option>
+                                <option value="LA"></option>
+                                <option value="ME"></option>
+                                <option value="MD"></option>
+                                <option value="MA"></option>
+                                <option value="MI"></option>
+                                <option value="MN"></option>
+                                <option value="MS"></option>
+                                <option value="MO"></option>
+                                <option value="MT"></option>
+                                <option value="NE"></option>
+                                <option value="NV"></option>
+                                <option value="NH"></option>
+                                <option value="NJ"></option>
+                                <option value="NM"></option>
+                                <option value="NY"></option>
+                                <option value="NC"></option>
+                                <option value="ND"></option>
+                                <option value="OH"></option>
+                                <option value="OK"></option>
+                                <option value="OR"></option>
+                                <option value="PA"></option>
+                                <option value="RI"></option>
+                                <option value="SC"></option>
+                                <option value="SD"></option>
+                                <option value="TN"></option>
+                                <option value="TX"></option>
+                                <option value="UT"></option>
+                                <option value="VT"></option>
+                                <option value="VA"></option>
+                                <option value="WA"></option>
+                                <option value="WV"></option>
+                                <option value="WI"></option>
+                                <option value="WY"></option>
+                        </datalist>
+                    </div>
+                    <div class="mb-3">
+                        <input type="radio" id="admin" name="accountType" value="Admin">
+                        <label for="admin">Admin</label><br>
+                        <input type="radio" id="student" name="accountType" value="Student">
+                        <label for="student">Student</label><br>
+                        <input type="radio" id="faculty" name="accountType" value="Faculty">
+                        <label for="faculty">Faculty</label>    
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="years">Years at school</label>
+                        <select name="yearSelect" id="yearSelect">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+
+                        </select>
+
+                        <label for="multiSelect">Programming Skills</label>
+
+                        <select name="multiSelect" id="multiSelect" multiple>
+                            <option value=".NET">NET</option>
+                            <option value="Java/C#">Java/C#"></option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="SQL">SQL</option>
+                            <option value="HTML/CSS">HTML/CSS</option>
+                        </select>
+                    </div>
+                        <button type="submit" id="submitButton">Submit</button>
+                 
+            </form>
+        </div>
+
+
+    <footer>
+    </footer>
+  </body>
+</html>
